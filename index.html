@@ -18,8 +18,10 @@
         <header><h1>Bienvenido a mi Web</h1></header>
       <!--<span styles="font-weight:bold;"></span>   <b></b>-->
         <nav>
-            <ul>
+            <ul class="clearfix">
                 <li><a href="#listas_ordenadas">Listas ordenadas</a></li>
+                <li><a href="#tabla">Tablas</a></li>
+                <li><a href="#section_multimedia">Multimedia</a></li>
             </ul>
         </nav>
         <main>
@@ -56,9 +58,14 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Futurama</td>
-                            <td>1999-2013</td>
-                            <td>30 min.</td>
+                            <td rowspan="2">Futurama</td>
+                            <td>1999-2008</td>
+                            <td rowspan="2">30 min.</td>
+                        </tr>
+                        <tr>
+
+                            <td>2010-2013</td>
+
                         </tr>
                         <tr>
                             <td>Padre de Familia</td>
@@ -75,7 +82,29 @@
                 </table>
 
             </section>
+            <section id="section_multimedia">
+                <header><h2>Multimedia</h2></header>
+                <div class="clearfix">
+                    <div class="lft">
+                        <audio controls>
+                            <source src="multimedia/Kalimba.mp3" type="audio/mpeg">
+                            Este texto se carga si el navegador no soporta el audio
 
+                        </audio>
+                    </div>
+                    <div class="lft">
+                        <audio controls>
+                            <source src="multimedia/Kalimba.mp3" type="audio/mpeg">
+                            Este texto se carga si el navegador no soporta el audio
+
+                        </audio>
+                    </div>
+                </div>
+                <div class="">
+                    <video controls></video>
+
+                </div>
+            </section>
 
         </main>
         <footer>

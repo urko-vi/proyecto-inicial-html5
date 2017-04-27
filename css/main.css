@@ -97,6 +97,9 @@ textarea {
 /*
 ************* ESTILOS GENERALES DE LA PÁGINA******************
 */
+/**
+Los selectores CSS: clase: .nombre_clase html tag: tag id: #nombreid
+*/
 html{
     font-size: 16px;
     color: black;
@@ -110,7 +113,16 @@ h1{
     font-weight: bold;/* BOLDER*/
 
 }
-
+a{
+    color: black;
+    text-decoration: none;
+}
+.lft{
+    float: left;
+}
+.clb{
+    clear: both;
+}
 p{
     text-align: justify;
 }
@@ -134,6 +146,23 @@ table tfoot td{
     border: none;
 }
 /**** MAQUETACIÓN TABLA SERIES*******/
+
+/*** maquetacion de menu ****/
+nav ul li{/*al li que esta dentro de un ul que esta dentro del nav   */
+    float: left;/** flotan */
+    width: 150px;/*un ancho a cada uno */
+    text-align: center;/* que el texto este centrado en su "caja"*/
+    list-style: none;/* le quitamos el disc de la lista*/
+   /* border-color: white;
+    border-style: solid;
+    border-width: 1px;*/
+    border: 1px solid white; /* lo de arriba del tiron*/
+    background-color: darkseagreen; /* color de fondo*/
+    transition:  background-color 2s;/* para que el efecto de cambio sea de 2 segundos */
+}
+nav ul li:hover{/*psedo selector que activa cuando el raton por encima */
+    background-color: aquamarine;
+}
 
 
 
