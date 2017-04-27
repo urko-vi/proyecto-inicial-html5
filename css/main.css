@@ -94,7 +94,46 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/*
+************* ESTILOS GENERALES DE LA PÁGINA******************
+*/
+html{
+    font-size: 16px;
+    color: black;
+}
+h1,h2{
+    color:#b3d4fc;
+}
+h1{
+    text-align: center;
+    font-size: 120%;
+    font-weight: bold;/* BOLDER*/
 
+}
+
+p{
+    text-align: justify;
+}
+table{
+    width: 100%;
+    border-width: 5px;
+    border-style: groove;
+    border-color: bisque;
+}
+table th,table td{
+    border-width: 1px;
+    border-style:solid;
+    border-color: black;
+}
+table tfoot tr,table thead tr{
+    border-width: 2px;
+    border-style:solid;
+    border-color: black;
+}
+table tfoot td{
+    border: none;
+}
+/**** MAQUETACIÓN TABLA SERIES*******/
 
 
 
