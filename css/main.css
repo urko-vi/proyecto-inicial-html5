@@ -113,7 +113,7 @@ h1,h2{
 }
 h1{
     text-align: center;
-    font-size: 120%;
+    font-size: 180%;
     font-weight: bold;/* BOLDER*/
 }
 a{
@@ -140,6 +140,14 @@ table{
     border-style: groove;
     border-color: bisque;
 }
+table caption {
+    visibility: hidden;
+    /*display:none;*/
+}
+table:hover caption{
+    visibility: visible;
+    /*display:block;*/
+}
 table th,table td{
     border-width: 1px;
     border-style:solid;
@@ -159,13 +167,23 @@ nav{
     top: 0;
     height: 40px;
     z-index: 8000;
-    right: 25%;
+    width: 100%;
+    background: #397230; /* Old browsers */
+    background: -moz-linear-gradient(top, #397230 0%, #53b701 34%, #78cc84 70%, #4ab251 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #397230 0%,#53b701 34%,#78cc84 70%,#4ab251 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #397230 0%,#53b701 34%,#78cc84 70%,#4ab251 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#397230', endColorstr='#4ab251',GradientType=0 ); /* IE6-9 */
 }
 #wrapper{
     position: relative;
     top: 40px;
 }
 /*** maquetacion de menu ****/
+nav ul{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#397230+0,53b701+34,78cc84+70,4ab251+100 */
+    margin: 0 auto;
+    width: 800px;
+}
 nav ul li{/*al li que esta dentro de un ul que esta dentro del nav   */
     height: 30px;
     float: left;/** flotan */
@@ -183,6 +201,7 @@ nav ul li{/*al li que esta dentro de un ul que esta dentro del nav   */
 }
 nav ul li:hover{/*psedo selector que activa cuando el raton por encima */
     background-color: aquamarine;
+ /*   font-size: 22px;*/
 }
 /*** MAQUETACION SECCIONES *****/
 section{
@@ -225,6 +244,13 @@ section:nth-child(even){
 }
 button{
     border-radius: 5px;
+}
+main section:last-child{
+    display: flex;
+}
+.flex-container {
+    display: flex;
+    flex-direction: row-reverse;
 }
 /* */
 
