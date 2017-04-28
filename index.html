@@ -11,11 +11,11 @@
         <!-- Place favicon.ico in the root directory -->
 
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/main.css?v=20170428">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
-        <header><h1>Bienvenido a mi Web</h1></header>
+
       <!--<span styles="font-weight:bold;"></span>   <b></b>-->
         <nav>
             <ul class="clearfix">
@@ -25,143 +25,146 @@
                 <li><a href="#ejer1">Primer Ejercicio</a></li>
             </ul>
         </nav>
-        <main>
-            <section id="listas_ordenadas">
-               <header><h2>Listas ordenadas</h2></header>
-                <div>
-                    Lista de series:
-                    <ol>
-                        <li>Series de animación
-                            <ul>
-                                <li>Dragoi Bola</li>
-                                <li>Futurama</li>
-                            </ul>
-                        </li>
-                        <li>Series no animación
-                            <ol>
-                               <li>Fringe</li>
-                               <li>Mr. Robot</li>
-                            </ol>
-                        </li>
-                    </ol>
-                </div>
-            </section>
-            <section id="tabla">
-                <header><h2>Tabla de Ejemplo</h2></header>
-                <table id="tabla_series">
-                    <caption>Titulo de la Tabla: series de netflix</caption>
-                    <thead>
-                        <tr>
-                            <th>Titulo</th>
-                            <th>Año</th>
-                            <th>Duración</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td rowspan="2">Futurama</td>
-                            <td>1999-2008</td>
-                            <td rowspan="2">30 min.</td>
-                        </tr>
-                        <tr>
-
-                            <td>2010-2013</td>
-
-                        </tr>
-                        <tr>
-                            <td>Padre de Familia</td>
-                            <td>1999-Actualmente</td>
-                            <td>30 min</td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <td>Numero de series</td>
-                            <td colspan="2">2</td>
-                        </tr>
-                    </tfoot>
-                </table>
-
-            </section>
-            <section id="section_multimedia">
-                <header><h2>Multimedia</h2></header>
-                <div class="clearfix">
-                    <div class="lft">
-                        <audio controls>
-                            <source src="multimedia/Kalimba.mp3" type="audio/mpeg">
-                            Este texto se carga si el navegador no soporta el audio
-
-                        </audio>
+        <div id="wrapper">
+            <header><h1>Bienvenido a mi Web</h1></header>
+            <main>
+                <section id="listas_ordenadas">
+                   <header><h2>Listas ordenadas</h2></header>
+                    <div>
+                        Lista de series:
+                        <ol>
+                            <li>Series de animación
+                                <ul>
+                                    <li>Dragoi Bola</li>
+                                    <li>Futurama</li>
+                                </ul>
+                            </li>
+                            <li>Series no animación
+                                <ol>
+                                   <li>Fringe</li>
+                                   <li>Mr. Robot</li>
+                                </ol>
+                            </li>
+                        </ol>
                     </div>
-                    <div class="lft">
-                        <audio controls>
-                            <source src="multimedia/Kalimba.mp3" type="audio/mpeg">
-                            Este texto se carga si el navegador no soporta el audio
+                </section>
+                <section id="tabla">
+                    <header><h2>Tabla de Ejemplo</h2></header>
+                    <table id="tabla_series">
+                        <caption>Titulo de la Tabla: series de netflix</caption>
+                        <thead>
+                            <tr>
+                                <th>Titulo</th>
+                                <th>Año</th>
+                                <th>Duración</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowspan="2">Futurama</td>
+                                <td>1999-2008</td>
+                                <td rowspan="2">30 min.</td>
+                            </tr>
+                            <tr>
 
-                        </audio>
+                                <td>2010-2013</td>
+
+                            </tr>
+                            <tr>
+                                <td>Padre de Familia</td>
+                                <td>1999-Actualmente</td>
+                                <td>30 min</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>Numero de series</td>
+                                <td colspan="2">2</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+
+                </section>
+                <section id="section_multimedia">
+                    <header><h2>Multimedia</h2></header>
+                    <div class="clearfix">
+                        <div class="lft">
+                            <audio controls>
+                                <source src="multimedia/Kalimba.mp3" type="audio/mpeg">
+                                Este texto se carga si el navegador no soporta el audio
+
+                            </audio>
+                        </div>
+                        <div class="lft">
+                            <audio controls>
+                                <source src="multimedia/Kalimba.mp3" type="audio/mpeg">
+                                Este texto se carga si el navegador no soporta el audio
+
+                            </audio>
+                        </div>
                     </div>
-                </div>
-                <div class="">
-                    <video controls></video>
+                    <div class="">
+                        <video controls></video>
 
-                </div>
-            </section>
-            <section id="ejer1">
-                <header><h2>Ejercicio de Flotantes</h2></header>
-                <div class="clearfix">
-                    <article>
-                        <header><h3>Video de Java Zone 2011</h3></header>
-                        <div>
-                            <video controls>
-                                <source src="multimedia/JavaForever2011.mp4" type="video/mp4">
-
-                                Your browser does not support the video tag.
-                            </video>
-
-                        </div>
-                        <div>
-                            <div>En una familia todo era feliz y bello hasta que...</div>
-                            <button>Leer Más</button>
-                        </div>
-                    </article>
-                    <article>
-                        <header><h3>Video de Java Zone 2012</h3></header>
-                        <div>
-                            <video controls>
-                                <source src="multimedia/JavaZone2012.mp4" type="video/mp4">
-
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
-                        <div>
+                    </div>
+                </section>
+                <section id="ejer1">
+                    <header><h2>Ejercicio de Flotantes</h2></header>
+                    <div class="clearfix">
+                        <article>
+                            <header><h3>Video de Java Zone 2011</h3></header>
                             <div>
-                               Ocurre algo fatal java se desistala en todos los equipos.
+                                <video controls>
+                                    <source src="multimedia/JavaForever2011.mp4" type="video/mp4">
+
+                                    Your browser does not support the video tag.
+                                </video>
 
                             </div>
-                            <button>Leer Más</button>
-                        </div>
-                    </article>
-                    <article>
-                        <header><h3>Video de Java Zone 2013</h3></header>
-                        <div class="">
-                            <video controls>
-                                <source src="multimedia/JavaZone2013.mp4" type="video/mp4">
+                            <div>
+                                <div>En una familia todo era feliz y bello hasta que...</div>
+                                <button>Más</button>
+                            </div>
+                        </article>
+                        <article>
+                            <header><h3>Video de Java Zone 2012</h3></header>
+                            <div>
+                                <video controls>
+                                    <source src="multimedia/JavaZone2012.mp4" type="video/mp4">
 
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
-                        <div class="">
-                            <div>Se trama el atraco del siglo.</div>
-                            <button>Leer Más</button>
-                        </div>
-                    </article>
-                </div>
-            </section>
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <div>
+                                <div>
+                                   Ocurre algo fatal java se desistala en todos los equipos.
 
-        </main>
-        <footer>
-            Página realizada para Ipartek S. Coop.
-        </footer>
+                                </div>
+                                <button>Más</button>
+                            </div>
+                        </article>
+                        <article>
+                            <header><h3>Video de Java Zone 2013</h3></header>
+                            <div class="">
+                                <video controls>
+                                    <source src="multimedia/JavaZone2013.mp4" type="video/mp4">
+
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <div class="">
+                                <div>Se trama el atraco del siglo.</div>
+                                <button>Más</button>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+            </main>
+            <footer>
+                Página realizada para Ipartek S. Coop.
+            </footer>
+        </div>
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
