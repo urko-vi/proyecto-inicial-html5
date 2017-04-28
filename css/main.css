@@ -245,13 +245,24 @@ section:nth-child(even){
 button{
     border-radius: 5px;
 }
-main section:last-child{
-    display: flex;
-}
 .flex-container {
     display: flex;
-    flex-direction: row-reverse;
 }
+main section:last-child{
+   /* display: flex;*/
+    flex-wrap: wrap;
+    justify-content: center;/* para centrar */
+}
+main section:last-child > div{
+    /* display: flex;*/
+    flex-wrap: wrap;
+}
+main section:last-child article{
+   /* display: flex;*/
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
 /* */
 
 
