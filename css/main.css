@@ -117,6 +117,11 @@ a{
     color: black;
     text-decoration: none;
 }
+button {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
 .lft{
     float: left;
 }
@@ -163,7 +168,31 @@ nav ul li{/*al li que esta dentro de un ul que esta dentro del nav   */
 nav ul li:hover{/*psedo selector que activa cuando el raton por encima */
     background-color: aquamarine;
 }
+#ejer1 article{
+    box-sizing: border-box;
+    width: calc(100%/3);
+    float: left;
+}
 
+#ejer1 article > div{
+    float: left;
+    width: 80%;
+    box-sizing: border-box;
+    height: 200px;
+}
+#ejer1 article > div:last-child{/*  */
+    width: 20%;
+}
+#ejer1 article video{
+    width: 100%;
+}
+#ejer1 article > div button{
+    height: 35px;
+}
+#ejer1 article > div div{
+    height: calc(200px - 35px);
+}
+/* */
 
 
 
