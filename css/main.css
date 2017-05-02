@@ -266,6 +266,47 @@ main section:last-child article{
 /* */
 
 
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+    .ocultar{
+        visibility: visible;
+        display: none;
+    }
+    main section:last-child > div{
+        flex-direction: column;
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+    nav ul li{
+        background-color: #2e6da4;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    .ocultar{
+        visibility: hidden;
+    }
+    nav ul li{
+        background-color: darkseagreen;
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+
 
 
 
