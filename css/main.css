@@ -276,7 +276,7 @@ main section:last-child article{
         display: none;
     }
     main section:last-child > div{
-        flex-direction: column;
+     /*   flex-direction: column;*/
     }
 }
 
