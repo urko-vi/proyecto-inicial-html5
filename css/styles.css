@@ -1,0 +1,17 @@
+.flex-container{
+    display: flex;
+}
+main{
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.table-row{
+    display: -webkit-flex;
+    display: inline-flex;
+    display: flex;
+}
+.wrapper{
+    display: -webkit-flex;
+    display: inline-flex;
+    display: flex;
+}
