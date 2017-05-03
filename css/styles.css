@@ -11,7 +11,24 @@ main{
     display: flex;
 }
 .wrapper{
-    display: -webkit-flex;
-    display: inline-flex;
-    display: flex;
+    display: -webkit-flex; /* Chrome   */
+    display: inline-flex;/* IE 9   */
+    display: flex; /* W3C */
+}
+.colum{
+    -webkit-flex-grow: 0;
+    flex-grow: 0;
+    -webkit-flex-shrink: 0;
+    flex-shrink: 0;
+    vertical-align: top;
+}
+.index{
+    width: 15px;
+}
+.name-surname-dni,
+.name-surname,
+.address-city-zip_code,
+.email-telephone{
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
 }

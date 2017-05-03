@@ -8,7 +8,7 @@
     <title>Vistas con FlexBox</title>
 </head>
 <body>
-    <header>Ejemplos con Flexbox</header>
+    <header><h1>Ejemplos con Flexbox</h1></header>
     <main class="flex-container">
         <section class="flex-container">
             <header><h2>Ejercicio 1 Flex</h2></header>
@@ -32,33 +32,25 @@
             <header><h2>Tabla Responsive Con Flex</h2></header>
             <div id="datosAlumnos">
                 <div class="table-row header">
-
-                    <div><input type="checkbox" value="-1" name="codigo"> </div>
-                    <div class="wrapper full-name">
-                        <div>
-                            <div>Nombre</div>
-                            <div>Apellidos</div>
+                    <div class="colum index"><input type="checkbox" value="-1" name="codigo"> </div>
+                    <div class="wrapper name-surname-dni">
+                        <div class="wrapper name-surname">
+                            <div class="colum name">Nombre</div>
+                            <div class="colum surname">Apellidos</div>
                         </div>
-                        <div>DNI</div>
+                        <div class="colum dni">DNI</div>
                     </div>
-                    <div class="wrapper">
-                        <div>Email</div>
-                        <div>Telefono</div>
+                    <div class="wrapper email-telephone">
+                        <div class="colum email">Email</div>
+                        <div class="colum telephone">Telefono</div>
                     </div>
-                    <div>F Nacimiento</div>
-                    <div class="wrapper">
-                        <div>Dirección</div>
-                        <div>Poblacion</div>
-                        <div>C.P.</div>
+                    <div class="colum date-of-birth">F Nacimiento</div>
+                    <div class="wrapper address-city-zip_code">
+                        <div class="colum address">Dirección</div>
+                        <div class="colum city">Poblacion</div>
+                        <div class="colum zip_code">C.P.</div>
                     </div>
-
                 </div>
-                <div class="table-row">
-
-                </div>
-
-
-
             </div>
 
         </section>
