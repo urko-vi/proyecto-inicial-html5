@@ -3,11 +3,14 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
+
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="css/styles.css">
     <title>Vistas con FlexBox</title>
 </head>
 <body>
+<!--
     <header>
         <nav role="navigation">
             <ul>
@@ -52,6 +55,7 @@
             </ul>
         </nav>
     </header>
+    -->
     <div id="wrapper">
         <h1>Ejemplos de CSS3 y HTML5</h1>
         <main class="flex-container">
@@ -144,7 +148,9 @@
                 <header><h2>Tabla Responsive Con Flex</h2></header>
                 <div id="datosAlumnos">
                     <div class="table-row header">
+                        <!--
                         <div class="colum index"><input type="checkbox" value="-1" name="codigo"> </div>
+                        -->
                         <div class="wrapper name-surname-dni-date_of_birth">
                             <div class="wrapper name-surname-dni">
                                 <div class="wrapper name-surname">
@@ -165,6 +171,37 @@
                             <div class="colum city">Poblacion</div>
                             <div class="colum zip_code">C.P.</div>
                         </div>
+                        <div class="wrapper actions">
+                         </div>
+                    </div>
+                    <div class="table-row">
+                        <!--
+                        <div class="colum index"><input type="checkbox" value="-1" name="codigo"> </div>
+                        -->
+                        <div class="wrapper name-surname-dni-date_of_birth">
+                            <div class="wrapper name-surname-dni">
+                                <div class="wrapper name-surname">
+                                    <div class="colum name">Maite</div>
+                                    <div class="colum surname">Monasterio</div>
+                                </div>
+                                <div class="colum dni">DNI</div>
+                            </div>
+                            <div class="colum date_of_birth">F Nacimiento</div>
+                        </div>
+                        <div class="wrapper email-telephone">
+                            <div class="colum email">Email</div>
+                            <div class="colum telephone">Telefono</div>
+                        </div>
+
+                        <div class="wrapper address-city-zip_code">
+                            <div class="colum address">Dirección</div>
+                            <div class="colum city">Poblacion</div>
+                            <div class="colum zip_code">C.P.</div>
+                        </div>
+                        <div class="wrapper actions">
+                            <div><a data-codigo="2" href="#">Editar</a> </div>
+                            <div><a data-codigo="2" href="#">Borrar</a></div>
+                        </div>
                     </div>
                 </div>
 
@@ -174,6 +211,14 @@
             </section>
         </main>
         <footer>
+            <!-- WAI - ARIA -->
+            <!-- data-toggle="5"-->
+            RRSS: <span class="fa fa-facebook-square size_rrss" aria-hidden="true"></span>
+            <ul class="rrss">
+                <li></li>
+                <li></li>
+            </ul>
+
 
         </footer>
     </div>

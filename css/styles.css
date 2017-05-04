@@ -32,6 +32,10 @@ main{
     display: inline-flex;
     display: flex;
 }
+.header{
+    background-color: yellow;
+    color: black;
+}
 .wrapper{
     display: -webkit-flex; /* Chrome   */
     display: inline-flex;/* IE 9   */
@@ -43,6 +47,7 @@ main{
     -webkit-flex-shrink: 0;
     flex-shrink: 0;
     vertical-align: top;
+    text-align: center;
 }
 .index{
     width: 15px;
@@ -54,14 +59,32 @@ main{
     -webkit-flex-grow: 1;
     flex-grow: 1;
 }
-/*
+.dni{
+    width: 50px;
+}
+.name{
+    width: 75px;
+}
+.surname{
+    width: 150px;
+}
 .date_of_birth{
     width: 100px;
 }
-.name-surname-dni-date_of_birth{
-    width:  200px;
+.size_rrss{
+    font-size: 50px;
 }
-*/
+.fa-facebook-square{
+    color:#3B5998;
+    transition: color 2s;
+
+}
+.fa-facebook-square:hover{
+    color: deeppink;
+}
+ul.rrss li{
+    background: url(../img/rss-sprites.jpg) transparent no-repeat 0 0;
+}
 /*==========  Mobile First Method  ==========*/
 
 /* Custom, iPhone Retina */
@@ -81,7 +104,7 @@ main{
     }
     body > header{
         height: 350px;
-        top:0px;
+        top:0;
     }
     .name-surname-dni-date_of_birth,
     .address-city-zip_code,
@@ -137,7 +160,13 @@ main{
     }
 
 
-
+    .email-telephone,
+    .address-city-zip_code,
+    .name-surname{
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+    }
 }
 
 /* Medium Devices, Desktops */
