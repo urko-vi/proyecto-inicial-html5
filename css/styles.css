@@ -1,6 +1,24 @@
 .flex-container{
     display: flex;
 }
+section#ejercicioflex {
+    flex-direction: column;
+    justify-content: center;
+}
+section#ejercicioflex > div{
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+section#ejercicioflex img{
+    width: 150px;
+}
+section#ejercicioflex article{
+    flex-direction: column;
+    justify-content: center;
+}
+
 main{
     flex-direction: column;
     flex-wrap: wrap;
@@ -31,4 +49,43 @@ main{
 .email-telephone{
     -webkit-flex-grow: 1;
     flex-grow: 1;
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+    .movil_invisible{
+        display: none;
+    }
+    .laptop_invisible{
+        display: block;
+    }
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    .movil_invisible{
+        display: block;
+    }
+    .laptop_invisible{
+        display: none;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
 }
