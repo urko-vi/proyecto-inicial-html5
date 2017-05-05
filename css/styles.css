@@ -92,25 +92,20 @@ ul li{
     list-style: none;
 }
 ul.rrss li{
-    background-image: url("../img/spites-logos.png");
+   background-image: url("../img/spites-logos.png");
     background-repeat: no-repeat;
-    width: 38px;
-    height: 38px;
+    width: 40px;
+    height: 40px;
     margin-left: 10px;
-    border-radius: 5px;
 }
 .linkedin{
-    background-position: -156px -39px;
-    transition: background-position 2s;
-}
-.linkedin:hover{
-    background-position: -156px -78px;
+    background-position: 160px 0;
 }
 .twitter{
-    background-position: -312px -39px;
+    background-position: 0 0;
 }
 .skype{
-    background-position: -276px -39px;
+    background-position: 0 0;
 }
 /*==========  Mobile First Method  ==========*/
 
@@ -299,3 +294,4 @@ header > nav > ul > li > a > div > span {
     line-height: 1rem;
     max-width: 260px;
 }
+
