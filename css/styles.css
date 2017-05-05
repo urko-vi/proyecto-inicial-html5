@@ -85,6 +85,9 @@ footer{
 .fa-facebook-square:hover{
     color: deeppink;
 }
+ul.rrss {
+    display: flex;
+}
 ul li{
     list-style: none;
 }
@@ -93,6 +96,7 @@ ul.rrss li{
     background-repeat: no-repeat;
     width: 40px;
     height: 40px;
+    margin-left: 10px;
 }
 .linkedin{
     background-position: 0 0;
@@ -101,7 +105,7 @@ ul.rrss li{
     background-position: 0 0;
 }
 .skype{
-
+    background-position: 0 0;
 }
 /*==========  Mobile First Method  ==========*/
 
