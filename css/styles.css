@@ -74,6 +74,9 @@ main{
 .size_rrss{
     font-size: 50px;
 }
+footer{
+    background-color: #4ab251;
+}
 .fa-facebook-square{
     color:#3B5998;
     transition: color 2s;
@@ -82,8 +85,23 @@ main{
 .fa-facebook-square:hover{
     color: deeppink;
 }
+ul li{
+    list-style: none;
+}
 ul.rrss li{
-    background: url(../img/rss-sprites.jpg) transparent no-repeat 0 0;
+   background-image: url("../img/spites-logos.png");
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+}
+.linkedin{
+    background-position: 0 0;
+}
+.twitter{
+    background-position: 0 0;
+}
+.skype{
+
 }
 /*==========  Mobile First Method  ==========*/
 
