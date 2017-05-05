@@ -92,20 +92,25 @@ ul li{
     list-style: none;
 }
 ul.rrss li{
-   background-image: url("../img/spites-logos.png");
+    background-image: url("../img/spites-logos.png");
     background-repeat: no-repeat;
-    width: 40px;
-    height: 40px;
+    width: 38px;
+    height: 38px;
     margin-left: 10px;
+    border-radius: 5px;
 }
 .linkedin{
-    background-position: 0 0;
+    background-position: -156px -39px;
+    transition: background-position 2s;
+}
+.linkedin:hover{
+    background-position: -156px -78px;
 }
 .twitter{
-    background-position: 0 0;
+    background-position: -312px -39px;
 }
 .skype{
-    background-position: 0 0;
+    background-position: -276px -39px;
 }
 /*==========  Mobile First Method  ==========*/
 
